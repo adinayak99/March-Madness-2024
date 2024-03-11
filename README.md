@@ -20,4 +20,11 @@ Kaggle competition
       <li>FirstD1Season indicates the first season a school was Division-I; not present in WTeams.csv.</li>
       <li>LastD1Season shows the last season a school was Division-I; not present in WTeams.csv.</li>
     </ul>
+  <li>MSeasons.csv and WSeasons.csv</li>
+    <ul>
+      <li>Separate files for men's (MSeasons) and women's data (WSeasons) identify different seasons in the historical data.</li>
+      <li><b>Season:</b> Indicates the year of the tournament, with the current season labeled as 2024.</li>
+      <li><b>DayZero:</b> Represents the date corresponding to DayNum=0 during the season, aligned to a common scale.</li>
+      <li>RegionW, RegionX, Region Y, Region Z: Each of the four regions in the final tournament is assigned a letter of W, X, Y, or Z. The first alphabetically named region becomes Region W, the second becomes Region X, and so on. This standardizes region identification across files, regardless of region name changes. For example, during the 2012 men's tournament, the regions were East, Midwest, South, and West, designated as W/X/Y/Z respectively. The W/X/Y/Z designations for each season are determined upon the announcement of the brackets on Selection Sunday.</li>
+    </ul>
 </ol>
