@@ -6,8 +6,9 @@ Kaggle competition
 <p><b>Deadline:</b> March 21, 2024 4PM UTC (11AM EST)</p>
 <br>
 <br>
-<h2>Dataset descriptions:</h2>
+<h1>Dataset descriptions:</h1>
 <br>
+<h2>Section 1 - The Basics</h2>
 <ol>
   <li>MTeams.csv and WTeams.csv</li>
     <ul>
@@ -53,4 +54,23 @@ Kaggle competition
     <li><b>NumOT:</b> Indicates the number of overtime periods in the game, an integer 0 or higher.</li>
   </ul>
   <br>
+  <li>MNCAATourneyCompactResults.csv and WNCAATourneyCompactResults.csv</li>
+  <ul>
+    <li><b>Files:</b> Identify game-by-game NCAA® tournament results for all historical seasons.</li>
+    <li><b>Structure:</b> Formatted like RegularSeasonCompactResults data. All men's games appear as neutral site (WLoc = N), and some women's games also appear as neutral site.</li>
+    <li><b>Games Listed:</b> Each season lists between 63 and 67 games, depending on the presence of play-in games.</li>
+    <li><b>Round Identification (Men's Schedule):</b></li>
+    <ul>
+      <li>DayNum=134/135: Play-in games to reduce the field to 64 teams.</li>
+      <li>DayNum=136/137: Round 1 (64 teams to 32 teams).</li>
+      <li>DayNum=138/139: Round 2 (32 teams to 16 teams).</li>
+      <li>DayNum=143/144: Round 3, known as "Sweet Sixteen" (16 teams to 8 teams).</li>
+      <li>DayNum=145/146: Round 4, known as "Elite Eight" or "regional finals" (8 teams to 4 teams).</li>
+      <li>DayNum=152: Round 5, known as "Final Four" or "national semifinals" (4 teams to 2 teams).</li>
+      <li>DayNum=154: Round 6, known as "national final" or "national championship" (2 teams to 1 champion team).</li>
+    </ul>
+    <li><b>Other Games:</b> Post-Selection Sunday games not part of the NCAA® Tournament include postseason tournaments like NIT, CBI, CIT, and Vegas 16. These are listed in "Secondary Tourney" data files in Data Section 6.</li>
+  </ul>
 </ol>
+<br>
+<h2>Section 2 - Team Box Scores</h2>
