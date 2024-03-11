@@ -39,4 +39,20 @@ Kaggle competition
     <li><b>Seed:</b> A 3/4-character identifier where the first character (W, X, Y, or Z) identifies the region, and the next two digits (01-16) denote the seed within the region. For play-in teams, a fourth character (a or b) distinguishes the seeds further, based on the lower numerical Team ID. For example, seed W01 represents the #1 seed in the W region.</li>
     <li><b>TeamID:</b> Identifies the ID number of the team specified in the MTeams.csv or WTeams.csv file.</li>
   </ul>
+  <br>
+  <li>MRegularSeasonCompactResults.csv and WRegularSeasonCompactResults.csv</li>
+  <ul>
+    <li><b>Files:</b> Identify game-by-game results for historical data from the 1985 season for men and the 1998 season for women.</li>
+    <li><b>Season:</b> Represents the year of the associated entry in MSeasons.csv or WSeasons.csv, corresponding to the final tournament year.</li>
+    <li><b>DayNum:</b> An integer ranging from 0 to 132, indicating the day the game was played. It is an offset from the "DayZero" date in the MSeasons.csv or WSeasons.csv file.</li>
+    <li><b>WTeamID:</b> Identifies the ID number of the winning team listed in the MTeams.csv or WTeams.csv file.</li>
+    <li><b>WScore:</b> Number of points scored by the winning team.</li>
+    <li><b>LTeamID:</b> Identifies the ID number of the losing team.</li>
+    <li><b>LScore:</b> Number of points scored by the losing team. WScore is always greater than LScore for all games listed.</li>
+    <li></li>
+    <li></li>
+  </ul>
+  <ul>
+    
+  </ul>
 </ol>
