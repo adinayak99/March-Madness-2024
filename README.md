@@ -49,10 +49,8 @@ Kaggle competition
     <li><b>WScore:</b> Number of points scored by the winning team.</li>
     <li><b>LTeamID:</b> Identifies the ID number of the losing team.</li>
     <li><b>LScore:</b> Number of points scored by the losing team. WScore is always greater than LScore for all games listed.</li>
-    <li></li>
-    <li></li>
+    <li><b>WLoc:</b> Identifies the "location" of the winning team: "H" for home, "A" for away, and "N" for neutral court.</li>
+    <li><b>NumOT:</b> Indicates the number of overtime periods in the game, an integer 0 or higher.</li>
   </ul>
-  <ul>
-    
-  </ul>
+  <br>
 </ol>
