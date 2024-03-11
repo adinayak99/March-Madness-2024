@@ -74,3 +74,18 @@ Kaggle competition
 </ol>
 <br>
 <h2>Section 2 - Team Box Scores</h2>
+<ol>
+  <li>MRegularSeasonDetailedResults.csv and WRegularSeasonDetailedResults.csv</li>
+  <ul>
+    <li><b>Dataset:</b> Team-level box scores for regular seasons of historical data.</li>
+    <li><b>Start Year:</b> Men's data begins with the 2003 season, while women's data starts with the 2010 season.</li>
+    <li><b>Content Coverage:</b> Includes detailed results for all games listed in MRegularSeasonCompactResults file since 2003 for men and since 2010 for women.</li>
+    <li><b>Data Consistency:</b> All games in MRegularSeasonCompactResults file since 2003 and WRegularSeasonCompactResults file since 2010 should be present exactly in the respective detailed results files.</li>
+  </ul>
+  <br>
+  <li>MNCAATourneyDetailedResults.csv and WNCAATourneyDetailedResults.csv</li>
+  <ul>
+    <li></li>
+  </ul>
+</ol>
+
