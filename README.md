@@ -134,10 +134,13 @@ Kaggle competition
   <li>MTeamCoaches.csv</li>
   <ul>
     <li><b>Dataset:</b> Provides information about the head coach for each team in each season, including start and finish ranges of DayNums indicating mid-season coaching changes.</li>
-    <li><b>Season:</b> Year of the associated entry in MSeasons.csv, representing the final tournament year.</li>
-    <li><b>TeamID:</b> TeamID of the coached team, as described in MTeams.csv.</li>
-    <li><b>FirstDayNum, LastDayNum:</b> Define a continuous range of days within the season when the indicated coach was the head coach of the team. FirstDayNum=0 indicates starting the year as head coach, and LastDayNum=154 indicates ending the year as head coach. Multiple records may exist for a coach in a season if there were coaching changes or leaves.</li>
-    <li><b>CoachName:</b> Text representation of the coach's full name, in the format first_last, with underscores substituted for spaces.</li>
+    <li>Columns:</li>
+    <ul>
+      <li><b>Season:</b> Year of the associated entry in MSeasons.csv, representing the final tournament year.</li>
+      <li><b>TeamID:</b> TeamID of the coached team, as described in MTeams.csv.</li>
+      <li><b>FirstDayNum, LastDayNum:</b> Define a continuous range of days within the season when the indicated coach was the head coach of the team. FirstDayNum=0 indicates starting the year as head coach, and LastDayNum=154 indicates ending the year as head coach. Multiple records may exist for a coach in a season if there were coaching changes or leaves.</li>
+      <li><b>CoachName:</b> Text representation of the coach's full name, in the format first_last, with underscores substituted for spaces.</li>
+    </ul>
   </ul>
   <li>Conferences.csv</li>
   <ul>
