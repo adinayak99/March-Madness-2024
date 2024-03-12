@@ -148,6 +148,13 @@ Kaggle competition
     Example: "Pacific-10" conference exists up to the 2011 season, followed by a "Pacific-12" conference starting in the 2012 season, although mostly the same teams.</li>
   </ul>
   <li>MTeamConferences.csv and WTeamConferences.csv</li>
+  <ul>
+    <li><b>Dataset Description:</b> Lists alternative spellings of team names for associating external spellings with TeamID numbers.</li>
+    <li><b>TeamNameSpelling:</b> The spelling of the team name, always in all lowercase letters for case-insensitive matching.</li>
+    <li><b>TeamID:</b> Identifies the TeamID for the team with the alternative spelling, as described in MTeams.csv or WTeams.csv.</li>
+    <li><b>Purpose:</b> Helps relate external data properly with datasets by providing mappings for different spellings of team names.<br>
+      Examples: Includes various alternative spellings for team names, such as "ball st", "ball st.", "ball state", "ball-st", and "ball-state" for Ball State.</li>
+  </ul>
   <li>MConferenceTourneyGames.csv</li>
   <li>MSecondaryTourneyTeams.csv</li>
   <li>MSecondaryTourneyCompactResults.csv</li>
