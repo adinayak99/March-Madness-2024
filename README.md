@@ -112,6 +112,18 @@ Kaggle competition
 </ol>
 <br>
 <h2>Section 4 - Public rankings</h2>
+<ol>
+  <li>MMasseyOrdinals.csv</li>
+  <ul>
+    <li>Dataset: Contains rankings of men's teams from the 2002-2003 season onwards, based on various ranking system methodologies.</li>
+    <li>Season: Year of the associated entry in MSeasons.csv, representing the final tournament year.</li>
+    <li>RankingDayNum: Integer ranging from 0 to 133, indicating the first day appropriate for using the rankings to predict games. Final pre-tournament rankings have a RankingDayNum of 133.</li>
+    <li>SystemName: 3-letter abbreviation for each distinct ranking system.</li>
+    <li>TeamID: ID of the team being ranked, as described in MTeams.csv.</li>
+    <li>OrdinalRank: Overall ranking of the team in the underlying system.</li>
+    <li>Disclaimer: Care must be taken in methodology when using or evaluating these ranking systems due to differences in release timing and the potential impact on predictions. Rankings are typically released weekly, but their timeline may vary. For pre-tournament predictions, a conservative RankingDayNum of Wednesday is often used.</li>
+ </ul>
+</ol>
 <br>
 <h2>Section 5 - Supplements</h2>
 <br>
