@@ -148,6 +148,17 @@ Kaggle competition
     Example: "Pacific-10" conference exists up to the 2011 season, followed by a "Pacific-12" conference starting in the 2012 season, although mostly the same teams.</li>
   </ul>
   <li>MTeamConferences.csv and WTeamConferences.csv</li>
+  <ul>
+    <li>Dataset Description: Indicates conference affiliations for each team during each season, separately for men's and women's teams.</li>
+    <li>Purpose: Tracks historical conference affiliations, including changes in conference names and team membership over the years.</li>
+    <li>Usage: Helps analyze team performance within specific conferences across different seasons and identify trends in conference realignment.</li>
+    <li>Columns:</li>
+    <ul>
+      <li>Season: The year of the entry in MSeasons.csv or WSeasons.csv, corresponding to the final tournament year.</li>
+      <li>TeamID: Identifies the TeamID as described in MTeams.csv or WTeams.csv.</li>
+      <li>ConfAbbrev: Identifies the conference using its abbreviation as described in Conferences.csv.</li>
+    </ul>
+  </ul>
   <li>MConferenceTourneyGames.csv</li>
   <li>MSecondaryTourneyTeams.csv</li>
   <li>MSecondaryTourneyCompactResults.csv</li>
