@@ -141,11 +141,11 @@ Kaggle competition
   </ul>
   <li>Conferences.csv</li>
   <ul>
-    <li>Dataset Description: Lists Division I conferences since 1985.</li>
-    <li>ConfAbbrev: Short abbreviation for each conference, used in other files to indicate the parent conference of a team or conference tournament.</li>
-    <li>Description: Longer text name for the conference.<br>
+    <li><b>Dataset Description:</b> Lists Division I conferences since 1985.</li>
+    <li><b>ConfAbbrev:</b> Short abbreviation for each conference, used in other files to indicate the parent conference of a team or conference tournament.</li>
+    <li><b>Description:</b> Longer text name for the conference.<br>
     Note: Conferences are not linked if they merged or changed names over time.<br>
-Example: "Pacific-10" conference exists up to the 2011 season, followed by a "Pacific-12" conference starting in the 2012 season, although mostly the same teams.</li>
+    Example: "Pacific-10" conference exists up to the 2011 season, followed by a "Pacific-12" conference starting in the 2012 season, although mostly the same teams.</li>
   </ul>
   <li>MTeamConferences.csv and WTeamConferences.csv</li>
   <li>MConferenceTourneyGames.csv</li>
