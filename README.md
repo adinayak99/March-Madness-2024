@@ -178,6 +178,18 @@ Kaggle competition
     <li>Usage: Helps analyze team performance within specific conferences across different seasons and identify trends in conference realignment.</li>
   </ul>
   <li>MSecondaryTourneyTeams.csv</li>
+  <ul>
+    <li>Dataset Description: Identifies teams participating in post-season men's tournaments other than the NCAA® Tournament.</li>
+    <li>Purpose: Provides data on teams not invited to the NCAA® Tournament but participating in other tournaments like NIT, CBI, CIT, V16, or TBC.</li>
+    <li>Columns:</li>
+    <ul>
+      <li>Season: Represents the year of the associated entry in MSeasons.csv.</li>
+      <li>SecondaryTourney: Abbreviation of the tournament such as NIT, CBI, CIT, V16 (Vegas 16), or TBC (The Basketball Classic).</li>
+      <li>TeamID: Identifies the TeamID participating in the tournament, as described in MTeams.csv.</li>
+    </ul>
+    <li>Usefulness: Additional game results beyond the NCAA® Tournament, valuable for model optimization and predicting NCAA® Tournament outcomes.</li>
+    <li>Convenience: While this information could be determined from the MSecondaryTourneyCompactResults file, it is presented separately for convenience.</li>
+  </ul>
   <li>MSecondaryTourneyCompactResults.csv</li>
   <li>MTeamSpellings.csv and WTeamSpellings.csv</li>
   <li>MNCAATourneySlots and WNCAATourneySlots</li>
