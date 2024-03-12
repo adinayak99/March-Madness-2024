@@ -213,6 +213,13 @@ Kaggle competition
       <li>TeamID: Identifies the TeamID associated with the alternative spelling, as described in MTeams.csv or WTeams.csv.</li>
   </ul>
   <li>MNCAATourneySlots and WNCAATourneySlots</li>
+    <ul>
+      <li><b>Purpose:</b> Identifies how teams are paired against each other as the tournament progresses, aiding in understanding historical game rounds and team matchups.</li>
+      <li><b>Season:</b> Indicates the year of the associated entry in MSeasons.csv or WSeasons.csv, corresponding to the final tournament year. For women's tournaments, recent expansions to 68 teams have led to season-specific Tourney Slots data.</li>
+      <li><b>Slot:</b> Uniquely identifies tournament games. For play-in games, it's a three-character string denoting the seed fulfilled by the winning team (e.g., W16). For regular tournament games, it's a four-character string indicating the round and the expected seed of the favored team (e.g., R1W1).</li>
+      <li><b>StrongSeed:</b> Indicates the expected stronger-seeded team for Round 1 games. For subsequent games, references a slot rather than a team seed.</li>
+      <li><b>WeakSeed:</b> Indicates the expected weaker-seeded team for Round 1 games. For subsequent games, references a slot rather than a team seed.</li>
+    </ul>
   <li>MNCAATourneySeedRoundSlots.csv</li>
 </ol>
 <br>
