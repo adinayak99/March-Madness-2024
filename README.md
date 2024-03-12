@@ -85,7 +85,33 @@ Kaggle competition
   <br>
   <li>MNCAATourneyDetailedResults.csv and WNCAATourneyDetailedResults.csv</li>
   <ul>
-    <li></li>
+    <li><b>Dataset:</b> Team-level box scores for regular seasons of historical data.</li>
+    <li><b>Start Year:</b> Men's data begins with the 2003 season, while women's data starts with the 2010 season.</li>
+    <li><b>Content Coverage:</b> Includes detailed results for all games listed in MRegularSeasonCompactResults file since 2003 for men and since 2010 for women.</li>
+    <li><b>Data Consistency:</b> All games in MRegularSeasonCompactResults file since 2003 and WRegularSeasonCompactResults file since 2010 should be present exactly in the respective detailed results files.</li>
   </ul>
 </ol>
-
+<br>
+<h2>Section 3 - Geography</h2>
+<ol>
+  <li> Cities.csv</li>
+  <ul>
+    <li><b>Dataset:</b> Master list of cities that have been locations for games played.</li>
+    <li><b>CityID:</b> A four-digit ID number uniquely identifying a city.</li>
+    <li><b>City:</b> The text name of the city.</li>
+    <li><b>State:</b> The state abbreviation of the state that the city is in. In rare cases, non-U.S. locations use other abbreviations (e.g., Cancun, Mexico uses "MX").</li>
+  </ul>
+  <li>MGameCities.csv and WGameCities.csv</li>
+  <ul>
+    <li>Dataset: Game data from the 2010 season onwards, including regular season, NCAA tournament, and other post-season tournaments (men's data only).</li>
+    <li>Season, DayNum, WTeamID, LTeamID: These four columns uniquely identify each game.</li>
+    <li>CRType: Indicates the type of game (Regular, NCAA, Secondary). Regular games are found in corresponding Regular Season Compact and Detailed Results files, NCAA games in corresponding NCAA Tourney files, and Secondary games in the MSecondaryTourneyCompactResults file.</li>
+    <li>CityID: Identifies the city where the game was played, referenced from the Cities.csv file.</li>
+    <li>Coverage: Games from the 2010 season onwards are included; games from the 2009 season and earlier are not listed in this file.</li>
+  </ul>
+</ol>
+<br>
+<h2>Section 4 - Public rankings</h2>
+<br>
+<h2>Section 5 - Supplements</h2>
+<br>
