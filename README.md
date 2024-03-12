@@ -9,6 +9,7 @@ Kaggle competition
 <h1>Dataset descriptions:</h1>
 <br>
 <h2>Section 1 - The Basics</h2>
+<p>This section provides everything you need to build a simple prediction model and submit predictions.</p>
 <ol>
   <li>MTeams.csv and WTeams.csv</li>
     <ul>
@@ -74,6 +75,7 @@ Kaggle competition
 </ol>
 <br>
 <h2>Section 2 - Team Box Scores</h2>
+<p>This section provides game-by-game stats at a team level (free throws attempted, defensive rebounds, turnovers, etc.) for all regular season, conference tournament, and NCAA® tournament games since the 2002-03 season (men) or since the 2009-10 season (women).</p>
 <ol>
   <li>MRegularSeasonDetailedResults.csv and WRegularSeasonDetailedResults.csv</li>
   <ul>
@@ -93,6 +95,7 @@ Kaggle competition
 </ol>
 <br>
 <h2>Section 3 - Geography</h2>
+<p>This section provides city locations of all regular season, conference tournament, and NCAA® tournament games since the 2009-10 season</p>
 <ol>
   <li> Cities.csv</li>
   <ul>
@@ -103,27 +106,54 @@ Kaggle competition
   </ul>
   <li>MGameCities.csv and WGameCities.csv</li>
   <ul>
-    <li>Dataset: Game data from the 2010 season onwards, including regular season, NCAA tournament, and other post-season tournaments (men's data only).</li>
-    <li>Season, DayNum, WTeamID, LTeamID: These four columns uniquely identify each game.</li>
-    <li>CRType: Indicates the type of game (Regular, NCAA, Secondary). Regular games are found in corresponding Regular Season Compact and Detailed Results files, NCAA games in corresponding NCAA Tourney files, and Secondary games in the MSecondaryTourneyCompactResults file.</li>
-    <li>CityID: Identifies the city where the game was played, referenced from the Cities.csv file.</li>
-    <li>Coverage: Games from the 2010 season onwards are included; games from the 2009 season and earlier are not listed in this file.</li>
+    <li><b>Dataset:</b> Game data from the 2010 season onwards, including regular season, NCAA tournament, and other post-season tournaments (men's data only).</li>
+    <li><b>Season, DayNum, WTeamID, LTeamID:</b> These four columns uniquely identify each game.</li>
+    <li><b>CRType:</b> Indicates the type of game (Regular, NCAA, Secondary). Regular games are found in corresponding Regular Season Compact and Detailed Results files, NCAA games in corresponding NCAA Tourney files, and Secondary games in the MSecondaryTourneyCompactResults file.</li>
+    <li><b>CityID:</b> Identifies the city where the game was played, referenced from the Cities.csv file.</li>
+    <li><b>Coverage:</b> Games from the 2010 season onwards are included; games from the 2009 season and earlier are not listed in this file.</li>
   </ul>
 </ol>
 <br>
 <h2>Section 4 - Public rankings</h2>
+<p>This section provides weekly team rankings (men's teams only) for dozens of top rating systems - Pomeroy, Sagarin, RPI, ESPN, etc., since the 2002-2003 season</p>
 <ol>
   <li>MMasseyOrdinals.csv</li>
   <ul>
-    <li>Dataset: Contains rankings of men's teams from the 2002-2003 season onwards, based on various ranking system methodologies.</li>
-    <li>Season: Year of the associated entry in MSeasons.csv, representing the final tournament year.</li>
-    <li>RankingDayNum: Integer ranging from 0 to 133, indicating the first day appropriate for using the rankings to predict games. Final pre-tournament rankings have a RankingDayNum of 133.</li>
-    <li>SystemName: 3-letter abbreviation for each distinct ranking system.</li>
-    <li>TeamID: ID of the team being ranked, as described in MTeams.csv.</li>
-    <li>OrdinalRank: Overall ranking of the team in the underlying system.</li>
-    <li>Disclaimer: Care must be taken in methodology when using or evaluating these ranking systems due to differences in release timing and the potential impact on predictions. Rankings are typically released weekly, but their timeline may vary. For pre-tournament predictions, a conservative RankingDayNum of Wednesday is often used.</li>
+    <li><b>Dataset:</b> Contains rankings of men's teams from the 2002-2003 season onwards, based on various ranking system methodologies.</li>
+    <li><b>Season:</b> Year of the associated entry in MSeasons.csv, representing the final tournament year.</li>
+    <li><b>RankingDayNum:</b> Integer ranging from 0 to 133, indicating the first day appropriate for using the rankings to predict games. Final pre-tournament rankings have a RankingDayNum of 133.</li>
+    <li><b>SystemName:</b> 3-letter abbreviation for each distinct ranking system.</li>
+    <li><b>TeamID:</b> ID of the team being ranked, as described in MTeams.csv.</li>
+    <li><b>OrdinalRank:</b> Overall ranking of the team in the underlying system.</li>
+    <li><b>Disclaimer:</b> Care must be taken in methodology when using or evaluating these ranking systems due to differences in release timing and the potential impact on predictions. Rankings are typically released weekly, but their timeline may vary. For pre-tournament predictions, a conservative RankingDayNum of Wednesday is often used.</li>
  </ul>
 </ol>
 <br>
 <h2>Section 5 - Supplements</h2>
+<p>This section contains additional supporting information, including coaches, conference affiliations, alternative team name spellings, bracket structure, and game results for NIT and other postseason tournaments.</p>
+<ol>
+  <li>MTeamCoaches.csv</li>
+  <ul>
+    <li><b>Dataset:</b> Provides information about the head coach for each team in each season, including start and finish ranges of DayNums indicating mid-season coaching changes.</li>
+    <li><b>Season:</b> Year of the associated entry in MSeasons.csv, representing the final tournament year.</li>
+    <li><b>TeamID:</b> TeamID of the coached team, as described in MTeams.csv.</li>
+    <li><b>FirstDayNum, LastDayNum:</b> Define a continuous range of days within the season when the indicated coach was the head coach of the team. FirstDayNum=0 indicates starting the year as head coach, and LastDayNum=154 indicates ending the year as head coach. Multiple records may exist for a coach in a season if there were coaching changes or leaves.</li>
+    <li><b>CoachName:</b> Text representation of the coach's full name, in the format first_last, with underscores substituted for spaces.</li>
+  </ul>
+  <li>Conferences.csv</li>
+  <ul>
+    <li>Dataset Description: Lists Division I conferences since 1985.</li>
+    <li>ConfAbbrev: Short abbreviation for each conference, used in other files to indicate the parent conference of a team or conference tournament.</li>
+    <li>Description: Longer text name for the conference.</li>
+    <li>Note: Conferences are not linked if they merged or changed names over time.<br>
+Example: "Pacific-10" conference exists up to the 2011 season, followed by a "Pacific-12" conference starting in the 2012 season, although mostly the same teams.</li>
+  </ul>
+  <li>MTeamConferences.csv and WTeamConferences.csv</li>
+  <li>MConferenceTourneyGames.csv</li>
+  <li>MSecondaryTourneyTeams.csv</li>
+  <li>MSecondaryTourneyCompactResults.csv</li>
+  <li>MTeamSpellings.csv and WTeamSpellings.csv</li>
+  <li>MNCAATourneySlots and WNCAATourneySlots</li>
+  <li>MNCAATourneySeedRoundSlots.csv</li>
+</ol>
 <br>
