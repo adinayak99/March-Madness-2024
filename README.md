@@ -211,6 +211,7 @@ Kaggle competition
     <ul>
       <li>TeamNameSpelling: Spelling of the team name in all lowercase letters for case-insensitive matching.</li>
       <li>TeamID: Identifies the TeamID associated with the alternative spelling, as described in MTeams.csv or WTeams.csv.</li>
+    </ul>
   </ul>
   <li>MNCAATourneySlots and WNCAATourneySlots</li>
     <ul>
