@@ -223,15 +223,15 @@ Kaggle competition
   <li>MNCAATourneySeedRoundSlots.csv</li>
     <ul>
       <li><b>Purpose:</b> Represents the men's bracket structure for any given tournament year.</li>
-      <li>GameRound: Indicates the round during the tournament that the game would occur in.</li>
+      <li><b>GameRound:</b> Indicates the round during the tournament that the game would occur in.</li>
       <ul>
         <li>Round 0 (zero) is for play-in games.</li>
         <li>Rounds 1/2 are for the first weekend.</li>
         <li>Rounds 3/4 are for the second weekend.</li>
         <li>Rounds 5/6 are the national semifinals and finals.</li>
       </ul>
-      <li>Seed: Represents the tournament seed of the team.</li>
-      <li>GameSlot: Identifies the game slot that the team would be playing in during the given GameRound. Naming convention for slots is described in the MNCAATourneySlots file.</li>
-      <li>EarlyDayNum, LateDayNum: Describe the earliest and latest possible DayNums that the game might be played on.</li>
+      <li><b>Seed:</b> Represents the tournament seed of the team.</li>
+      <li><b>GameSlot:</b> Identifies the game slot that the team would be playing in during the given GameRound. Naming convention for slots is described in the MNCAATourneySlots file.</li>
+      <li><b>EarlyDayNum, LateDayNum:</b> Describe the earliest and latest possible DayNums that the game might be played on.</li>
     </ul>
 </ol>
