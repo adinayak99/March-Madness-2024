@@ -166,6 +166,17 @@ Kaggle competition
     </ul>
   </ul>
   <li>MConferenceTourneyGames.csv</li>
+  <ul>
+    <li>Dataset Description: Indicates conference affiliations for each team during each season, separately for men's and women's teams.
+    <li>Columns:</li>
+    <ul>
+      <li>Season: The year of the entry in MSeasons.csv or WSeasons.csv, corresponding to the final tournament year.</li>
+      <li>TeamID: Identifies the TeamID as described in MTeams.csv or WTeams.csv.</li>
+      <li>ConfAbbrev: Identifies the conference using its abbreviation as described in Conferences.csv.</li>
+    </ul>
+    <li>Purpose: Tracks historical conference affiliations, including changes in conference names and team membership over the years.</li>
+    <li>Usage: Helps analyze team performance within specific conferences across different seasons and identify trends in conference realignment.</li>
+  </ul>
   <li>MSecondaryTourneyTeams.csv</li>
   <li>MSecondaryTourneyCompactResults.csv</li>
   <li>MTeamSpellings.csv and WTeamSpellings.csv</li>
