@@ -155,10 +155,10 @@ Kaggle competition
   </ul>
   <li>MTeamConferences.csv and WTeamConferences.csv</li>
   <ul>
-    <li>Dataset Description: Indicates conference affiliations for each team during each season, separately for men's and women's teams.</li>
-    <li>Purpose: Tracks historical conference affiliations, including changes in conference names and team membership over the years.</li>
-    <li>Usage: Helps analyze team performance within specific conferences across different seasons and identify trends in conference realignment.</li>
-    <li>Columns:</li>
+    <li><b>Dataset Description:</b> Indicates conference affiliations for each team during each season, separately for men's and women's teams.</li>
+    <li><b>Purpose:</b> Tracks historical conference affiliations, including changes in conference names and team membership over the years.</li>
+    <li><b>Usage:</b> Helps analyze team performance within specific conferences across different seasons and identify trends in conference realignment.</li>
+    <li><b>Columns:</b></li>
     <ul>
       <li>Season: The year of the entry in MSeasons.csv or WSeasons.csv, corresponding to the final tournament year.</li>
       <li>TeamID: Identifies the TeamID as described in MTeams.csv or WTeams.csv.</li>
@@ -167,31 +167,51 @@ Kaggle competition
   </ul>
   <li>MConferenceTourneyGames.csv</li>
   <ul>
-    <li>Dataset Description: Indicates conference affiliations for each team during each season, separately for men's and women's teams.
-    <li>Columns:</li>
+    <li><b>Dataset Description:</b> Indicates conference affiliations for each team during each season, separately for men's and women's teams.
+    <li><b>Columns:</b></li>
     <ul>
       <li>Season: The year of the entry in MSeasons.csv or WSeasons.csv, corresponding to the final tournament year.</li>
       <li>TeamID: Identifies the TeamID as described in MTeams.csv or WTeams.csv.</li>
       <li>ConfAbbrev: Identifies the conference using its abbreviation as described in Conferences.csv.</li>
     </ul>
-    <li>Purpose: Tracks historical conference affiliations, including changes in conference names and team membership over the years.</li>
-    <li>Usage: Helps analyze team performance within specific conferences across different seasons and identify trends in conference realignment.</li>
+    <li><b>Purpose:</b> Tracks historical conference affiliations, including changes in conference names and team membership over the years.</li>
+    <li><b>Usage:</b> Helps analyze team performance within specific conferences across different seasons and identify trends in conference realignment.</li>
   </ul>
   <li>MSecondaryTourneyTeams.csv</li>
   <ul>
-    <li>Dataset Description: Identifies teams participating in post-season men's tournaments other than the NCAA® Tournament.</li>
-    <li>Purpose: Provides data on teams not invited to the NCAA® Tournament but participating in other tournaments like NIT, CBI, CIT, V16, or TBC.</li>
-    <li>Columns:</li>
+    <li><b>Dataset Description:</b> Identifies teams participating in post-season men's tournaments other than the NCAA® Tournament.</li>
+    <li><b>Purpose:</b> Provides data on teams not invited to the NCAA® Tournament but participating in other tournaments like NIT, CBI, CIT, V16, or TBC.</li>
+    <li><b>Columns:</b></li>
     <ul>
       <li>Season: Represents the year of the associated entry in MSeasons.csv.</li>
       <li>SecondaryTourney: Abbreviation of the tournament such as NIT, CBI, CIT, V16 (Vegas 16), or TBC (The Basketball Classic).</li>
       <li>TeamID: Identifies the TeamID participating in the tournament, as described in MTeams.csv.</li>
     </ul>
-    <li>Usefulness: Additional game results beyond the NCAA® Tournament, valuable for model optimization and predicting NCAA® Tournament outcomes.</li>
-    <li>Convenience: While this information could be determined from the MSecondaryTourneyCompactResults file, it is presented separately for convenience.</li>
+    <li><b>Usefulness:</b> Additional game results beyond the NCAA® Tournament, valuable for model optimization and predicting NCAA® Tournament outcomes.</li>
+    <li><b>Convenience:</b> While this information could be determined from the MSecondaryTourneyCompactResults file, it is presented separately for convenience.</li>
   </ul>
   <li>MSecondaryTourneyCompactResults.csv</li>
+  <ul>
+    <li><b>Dataset Description:</b> Provides final scores for tournament games of "secondary" post-season tournaments like NIT, CBI, CIT, and Vegas 16.</li>
+    <li><b>Content:</b> Similar to other Compact Results listings but includes a column for Secondary Tourney.</li>
+    <li><b>Exclusion from Regular Season Data:</b> Games played after DayNum=132 are not listed in the MRegularSeasonCompactResults file.</li>
+    <li><b>Columns:</b></li>
+    <ul>
+      <li>SecondaryTourney: Abbreviation of the tournament such as NIT, CBI, CIT, V16 (Vegas 16), or TBC (The Basketball Classic).</li>
+    </ul>
+  </ul>
   <li>MTeamSpellings.csv and WTeamSpellings.csv</li>
+  <ul>
+    <li><b>Purpose:</b> These files help in associating external spellings of team names with internal TeamID numbers, aiding in proper data integration.</li>
+    <li><b>Content:</b> Contains alternative spellings of team names identified over the years.</li>
+    <li><b>Example:</b> Variations for "Ball State" include "ball st", "ball st.", "ball state", "ball-st", and "ball-state".</li>
+    <li><b>Significance:</b> Ensures proper matching of different spellings to the correct TeamID, maintaining data consistency.</li>
+    <li><b>Encouragement:</b> Participants are encouraged to identify and upload additional mappings to the forums for an expanded list.</li>
+    <li><b>Format:</b></li>
+    <ul>
+      <li>TeamNameSpelling: Spelling of the team name in all lowercase letters for case-insensitive matching.</li>
+      <li>TeamID: Identifies the TeamID associated with the alternative spelling, as described in MTeams.csv or WTeams.csv.</li>
+  </ul>
   <li>MNCAATourneySlots and WNCAATourneySlots</li>
   <li>MNCAATourneySeedRoundSlots.csv</li>
 </ol>
