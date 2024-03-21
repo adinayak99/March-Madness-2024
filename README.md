@@ -3,7 +3,7 @@ ITC-AI competition
 <br>
 <p><b>Goal:</b> Forecasting the outcomes of both the men's 2024 collegiate basketball tournaments.</p>
 <p><b>Deadline:</b> March 21, 2024 4PM UTC (11AM EST)</p>
-<br>
+<p>Data files link: https://www.kaggle.com/competitions/march-machine-learning-mania-2024/data</p>
 <b>Group Members:</b>
 <ol>
   <li>Aditya Nayak; CCAS - Data Science (adityasnayak99@gwu.edu)</li>
