@@ -1,9 +1,14 @@
-# March-Madness-2024
-Kaggle competition
+# The Aditya Twins' March-Madness-2024
+ITC-AI competition
 <br>
-<p><b>Goal:</b> Forecasting the outcomes of both the men's and women's 2024 collegiate basketball tournaments.</p>
+<p><b>Goal:</b> Forecasting the outcomes of both the men's 2024 collegiate basketball tournaments.</p>
 <p><b>Deadline:</b> March 21, 2024 4PM UTC (11AM EST)</p>
 <br>
+<b>Group Members:</b>
+<ol>
+  <li>Aditya Nayak</li>
+  <li>Aditya Singh</li>
+</ol>
 <br>
 <h1>Dataset descriptions:</h1>
 <br>
