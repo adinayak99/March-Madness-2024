@@ -7,7 +7,7 @@ ITC-AI competition
 <b>Group Members:</b>
 <ol>
   <li>Aditya Nayak; CCAS - Data Science (adityasnayak99@gwu.edu)</li>
-  <li>Aditya Singh; SEAS - Computer Science</li>
+  <li>Aditya Singh; SEAS - Computer Science (adityasingh@email.gwu.edu)</li>
 </ol>
 <br>
 <h1>Dataset descriptions:</h1>
